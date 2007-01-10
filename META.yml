@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Business-ISMN
-version:             1.9
+version:             1.10
 abstract:            ~
 license:             perl
 generated_by:        ExtUtils::MakeMaker version 6.31

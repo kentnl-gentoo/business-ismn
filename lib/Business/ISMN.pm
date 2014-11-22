@@ -1,4 +1,3 @@
-# $Id: ISMN.pm,v 1.11 2007/10/26 03:01:06 comdog Exp $
 package Business::ISMN;
 use strict;
 
@@ -24,7 +23,7 @@ my $debug = 0;
 @EXPORT_OK = qw(is_valid_checksum ean_to_ismn ismn_to_ean
 	INVALID_PUBLISHER_CODE BAD_CHECKSUM GOOD_ISMN BAD_ISMN);
 
-($VERSION)   = q$Revision: 1.11 $ =~ m/(\d+\.\d+)\s*$/;
+($VERSION)   = '1.12';
 
 sub INVALID_PUBLISHER_CODE { -3 };
 sub BAD_CHECKSUM           { -1 };
@@ -288,8 +287,8 @@ sub _checksum
 	}
 
 #internal function.  you don't get to use this one.
-sub _common_format
-	{
+sub _common_format {
+	no warnings qw(uninitialized);
 	#we want uppercase X's
 	my $data = uc shift;
 
@@ -543,13 +542,9 @@ what to do.
 
 =head1 SOURCE AVAILABILITY
 
-This source is part of a SourceForge project which always has the
-latest sources in CVS, as well as all of the previous releases.
+This source is in Github:
 
-	http://sourceforge.net/projects/brian-d-foy/
-
-If, for some reason, I disappear from the world, one of the other
-members of the project can shepherd this module appropriately.
+    http://github.com/briandfoy/business--isbn/tree/master
 
 =head1 AUTHOR
 
@@ -557,7 +552,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2001-2007, brian d foy, All Rights Reserved.
+Copyright (c) 2001-2014, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

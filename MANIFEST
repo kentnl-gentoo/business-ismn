@@ -11,8 +11,6 @@ META.yml
 README
 t/ismn.t
 t/load.t
-t/pod.t
-t/pod_coverage.t
 t/prereq.t
 t/test_manifest
 META.json                                Module JSON meta-data (added by MakeMaker)

@@ -2,7 +2,7 @@ package Business::ISMN;
 use strict;
 
 use base qw(Exporter);
-use subs qw( 
+use subs qw(
 	_common_format _checksum is_valid_checksum
 	INVALID_PUBLISHER_CODE
 	BAD_CHECKSUM
@@ -23,7 +23,7 @@ my $debug = 0;
 @EXPORT_OK = qw(is_valid_checksum ean_to_ismn ismn_to_ean
 	INVALID_PUBLISHER_CODE BAD_CHECKSUM GOOD_ISMN BAD_ISMN);
 
-($VERSION)   = '1.13';
+($VERSION)   = '1.131';
 
 sub INVALID_PUBLISHER_CODE { -3 };
 sub BAD_CHECKSUM           { -1 };
@@ -312,6 +312,8 @@ sub _common_format {
 
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 Business::ISMN - work with International Standard Music Numbers
@@ -552,7 +554,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2001-2014, brian d foy, All Rights Reserved.
+Copyright © 2001-2016, brian d foy <bdfoy@cpan.org>. All rights reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

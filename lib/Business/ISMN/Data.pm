@@ -1,7 +1,9 @@
 package Business::ISMN::Data;
 use strict;
 
-our $VERSION  = '1.13';
+our $VERSION  = '1.131';
+
+=encoding utf8
 
 =head1 NAME
 
@@ -21,7 +23,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2005-2014 brian d foy.  All rights reserved.
+Copyright © 2005-2016, brian d foy <bdfoy@cpan.org>. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

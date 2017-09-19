@@ -11,7 +11,6 @@ MANIFEST.SKIP
 README.pod
 t/ismn.t
 t/load.t
-t/test_manifest
 xt/changes.t
 META.yml                                 Module YAML meta-data (added by MakeMaker)
 META.json                                Module JSON meta-data (added by MakeMaker)
